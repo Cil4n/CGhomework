@@ -23,6 +23,7 @@ body {
 <body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js">
 </script>
+<script src="https://threejs.org/build/three.js"></script>
 <script src="https://threejs.org/examples/js/controls/OrbitControls.js">
 </script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -31,7 +32,6 @@ body {
 	<br/>
 </div>
 <script src="https://jyunming-chen.github.io/tutsplus/js/KeyboardState.js"></script>
-<script src="https://threejs.org/build/three.js"></script>
 <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/loaders/MTLLoader.js"></script>
 <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/loaders/OBJLoader.js"></script>
 <script>
@@ -39,7 +39,7 @@ body {
 var renderer, camera1, camera2,controls, scene;
 var keyboard = new KeyboardState();
 
-var car=new THREE.Object3D();;
+var car=new THREE.Object3D();
 var pos = new THREE.Vector3();
 var speed, angle, vel;
 var clock;
