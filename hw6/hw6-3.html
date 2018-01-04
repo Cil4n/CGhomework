@@ -234,9 +234,9 @@ function onDocumentMouseDown(event) {
 	else{
 		let picked = intersects[0].object.parent.number;
 		console.log(picked);
-		for (let i = 1; i < teapots.length+1; i++) {
-			if(i === picked) {
-				teapots[i-1].toggle();
+    for (let i = 0; i < teapots.length; i++) {
+			if(i+1 == picked && teapots[i].life>0.0) {
+				teapots[i].toggle();
 			}
 		}
 	}
